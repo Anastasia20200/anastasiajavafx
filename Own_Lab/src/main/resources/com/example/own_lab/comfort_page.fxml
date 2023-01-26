@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.own_lab.comfort">
+    <children>
+        <AnchorPane prefHeight="400.0" prefWidth="146.0" style="-fx-background-color: #FAF0E6;">
+            <effect>
+                <DropShadow />
+            </effect>
+            <children>
+                <VBox prefHeight="124.0" prefWidth="153.0" style="-fx-background-color: #D2B48C;" />
+                <ImageView fitHeight="87.0" fitWidth="140.0" layoutX="7.0" layoutY="8.0">
+                    <image>
+                        <Image url="@../../../../../../../../Desktop/logo_hotel.png" />
+                    </image>
+                </ImageView>
+                <Button fx:id="bron" layoutY="124.0" mnemonicParsing="false" onAction="#bron" prefHeight="31.0" prefWidth="153.0" text="Бронь" />
+                <Button fx:id="dodatku" layoutY="155.0" mnemonicParsing="false" onAction="#dodatku" prefHeight="31.0" prefWidth="153.0" text="Додатки" />
+                <Button fx:id="zrych" layoutY="185.0" mnemonicParsing="false" onAction="#zrych" prefHeight="31.0" prefWidth="153.0" text="Зручності" />
+            </children>
+        </AnchorPane>
+        <AnchorPane layoutX="153.0" layoutY="40.0" prefHeight="360.0" prefWidth="441.0" style="-fx-background-color: #FFFAFA;">
+            <effect>
+                <ColorAdjust brightness="0.12" />
+            </effect>
+            <children>
+                <Button fx:id="Next" layoutX="352.0" layoutY="308.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="63.0" text="Далі" />
+                <AnchorPane layoutY="-41.0" prefHeight="87.0" prefWidth="447.0" style="-fx-background-color: #DCDCDC;">
+                    <effect>
+                        <DropShadow />
+                    </effect>
+                    <children>
+                        <Text fontSmoothingType="LCD" layoutX="160.0" layoutY="53.0" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="Зручності" underline="true" wrappingWidth="110.0">
+                            <font>
+                                <Font size="23.0" />
+                            </font>
+                        </Text>
+                    </children>
+                </AnchorPane>
+            <TextArea layoutX="26.0" layoutY="62.0" prefHeight="272.0" prefWidth="289.0" style="-fx-background-color: #D2B48C;">
+               <effect>
+                  <GaussianBlur />
+               </effect>
+            </TextArea>
+            <Text layoutX="41.0" layoutY="105.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Інтернет" />
+            <Text layoutX="40.0" layoutY="137.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Медіа та технології" />
+            <Text layoutX="41.0" layoutY="169.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Камера зберігання" />
+            <Text layoutX="41.0" layoutY="204.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Послуги прибирання" />
+            <Text layoutX="40.0" layoutY="235.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Зручності в номері" />
+            <Text layoutX="41.0" layoutY="266.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Вид" />
+            <Text layoutX="39.0" layoutY="294.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Безпека" />
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.own_lab.reservation">
+   <children>
+      <AnchorPane prefHeight="400.0" prefWidth="146.0" style="-fx-background-color: #FAF0E6;">
+         <effect>
+            <DropShadow />
+         </effect>
+         <children>
+            <VBox prefHeight="124.0" prefWidth="153.0" style="-fx-background-color: #D2B48C;" />
+            <ImageView fitHeight="87.0" fitWidth="140.0" layoutX="7.0" layoutY="8.0">
+               <image>
+                  <Image url="@../../../../../../../../Desktop/logo_hotel.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="bron1" layoutY="124.0" mnemonicParsing="false" onAction="#bron1" prefHeight="31.0" prefWidth="153.0" text="Бронь" />
+            <Button fx:id="dodatku" layoutY="155.0" mnemonicParsing="false" onAction="#dodatku" prefHeight="31.0" prefWidth="153.0" text="Додатки" />
+            <Button fx:id="zrych" layoutY="185.0" mnemonicParsing="false" onAction="#zrych" prefHeight="31.0" prefWidth="153.0" text="Зручності" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="153.0" layoutY="40.0" prefHeight="360.0" prefWidth="441.0" style="-fx-background-color: #FFFAFA;">
+         <effect>
+            <ColorAdjust brightness="0.12" />
+         </effect>
+         <children>
+            <RadioButton layoutX="12.0" layoutY="160.0" mnemonicParsing="false" text="Стандарт">
+               <font>
+                  <Font name="Courant" size="15.0" />
+               </font>
+            </RadioButton>
+            <RadioButton layoutX="12.0" layoutY="117.0" mnemonicParsing="false" text="Люкс клас">
+               <font>
+                  <Font name="Courant" size="15.0" />
+               </font>
+            </RadioButton>
+            <RadioButton layoutX="12.0" layoutY="200.0" mnemonicParsing="false" text="Економ клас">
+               <font>
+                  <Font name="Courant" size="15.0" />
+               </font>
+            </RadioButton>
+            <Button fx:id="next" layoutX="352.0" layoutY="308.0" mnemonicParsing="false" onAction="#Next" prefHeight="31.0" prefWidth="63.0" text="Далі" />
+            <AnchorPane layoutY="-41.0" prefHeight="87.0" prefWidth="447.0" style="-fx-background-color: #DCDCDC;">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <children>
+                  <Text fontSmoothingType="LCD" layoutX="103.0" layoutY="53.0" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="Бронювання номеру" underline="true" wrappingWidth="244.0">
+                     <font>
+                        <Font size="23.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+            <Text layoutX="31.0" layoutY="88.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Тип номера" wrappingWidth="127.0">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

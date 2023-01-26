@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.own_lab.secondpage">
+   <children>
+      <AnchorPane prefHeight="135.0" prefWidth="600.0" style="-fx-background-color: #FAF0E6;">
+         <children>
+            <ImageView fitHeight="121.0" fitWidth="200.0" layoutX="200.0" layoutY="7.0">
+               <image>
+                  <Image url="@../../../../../../../../Desktop/logo_hotel.png" />
+               </image>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <TextField fx:id="First_name" layoutX="42.0" layoutY="146.0" onAction="#registration_name" promptText="імя" />
+      <TextField fx:id="last_name" layoutX="42.0" layoutY="194.0" onAction="#registratin_last_name" promptText="прізвище" />
+      <TextField fx:id="login" layoutX="42.0" layoutY="240.0" onAction="#registration_login" promptText="login" />
+      <TextField fx:id="password" layoutX="42.0" layoutY="285.0" onAction="#registration_password" promptText="password" />
+      <TextField layoutX="42.0" layoutY="331.0" />
+      <Button fx:id="registr" layoutX="386.0" layoutY="346.0" mnemonicParsing="false" onAction="#Registration" prefHeight="31.0" prefWidth="148.0" text="Зареєструватись" />
+      <Button fx:id="Log" layoutX="434.0" layoutY="253.0" mnemonicParsing="false" onAction="#Log" text="Log In" />
+   </children>
+</AnchorPane>
